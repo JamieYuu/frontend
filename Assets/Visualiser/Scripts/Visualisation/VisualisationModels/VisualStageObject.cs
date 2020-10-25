@@ -27,6 +27,7 @@ namespace Visualiser
         public VisualSpriteObject[] visualSprites;
         public string stageName;
         public string stageInfo;
+        public string cost;
     }
 
 

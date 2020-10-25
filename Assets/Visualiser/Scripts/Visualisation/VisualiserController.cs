@@ -74,6 +74,7 @@ namespace Visualiser
         public Transform SubgoalPanel;
         public GameObject AniFrame;
         public GameObject InforScreen;
+        public GameObject CostScreen;
         public GameObject Speedbar;
         public GameObject SubgoalProgressText;
         public Transform StepPanel;
@@ -427,6 +428,11 @@ namespace Visualiser
             stepInfoText.text = string.IsNullOrEmpty(stepInfo) ?
                                     "No Step Informattion available" :
                                     stepInfo;
+            String cost = visualStage.cost;
+            var costText = CostScreen.GetComponentInChildren<Text>();
+            costText.text = string.IsNullOrEmpty(cost) ?
+                                    "No Cost available" :
+                                    cost;
         }
 
         // Update subgoal panel UI
